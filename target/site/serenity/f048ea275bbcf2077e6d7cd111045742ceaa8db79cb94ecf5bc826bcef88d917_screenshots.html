@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2d2cc5ffec9591d253d8f5b060ac6d0d29d3459e22558a8dc3993955f732582d.html">Colorlib</a></span>
+                > <span class="truncate-60"><a
+                    href="f048ea275bbcf2077e6d7cd111045742ceaa8db79cb94ecf5bc826bcef88d917.html">verificar el diligenciamiento de la pantalla </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-06-2021 09:44</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Colorlib </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                como usuario, yo quiero verificar el diligenciamiento del formulario Block Validation
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c16d66a27efa330295debbfe1a8e78f0809b5d728134aa11302bba741409bcb4.html">Esquema1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">verificar el diligenciamiento de la pantalla
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d9a128ee715ebf7490ffad3ec58d53c85b26ee96dae167f115574e14dfa18b0d.png" title="Dado que Laura quiere ingresar a la pagina colorlib" width="1366"/>
+                <img src="cc06cfeaf125b557e584c40bb20284445cb7dc844f64d983498e49153e84be90.png" title="Laura opens the Colorlib page" width="1366"/>
+                <img src="f0c7a7fe3fb14930aaf75c201fa13596913bd0c8645346d5f217ab3f7d5ee615.png" title="Laura enters 'demo' into Escriba su usuario" width="1366"/>
+                <img src="ebcaf258319088cf010c91e472225a30eeb457cde14a3c0f79faee7d47f23850.png" title="Laura enters 'demo' into Digite su contrase&ntilde;a" width="1366"/>
+                <img src="43f1ed9256c35e5e82e48469a94868dee12aef997f5ed331fcdaeb1e380510a3.png" title="Laura clicks on Seleccione el boton LOGIN" width="1366"/>
+                <img src="154f2c7336530ad095a6651f0c8b1e2c99b4bf55419fcc8df975c46263673c4d.png" title="Laura clicks on Seleccione Forms" width="1366"/>
+                <img src="dc3dc447b3a9d5ccb600ab78d956628181e294534fb24ce38b704e7f57a54bdc.png" title="Laura clicks on Seleccione la opcion Forms Validation" width="1366"/>
+                <img src="05915acc59908116ce9008125c0a9f48244ec84ff639c5f4cfe4dd1e0bdd8165.png" title="Laura clicks on Seleccione la opcion BLOCK VALIDATION" width="1366"/>
+                <img src="bff1073e60da215e1d2a47d0e72394affa8e00b1739b1cf482a1cc53b2806651.png" title="Laura enters 'laura perez' into Ingrese su Requerido" width="1366"/>
+                <img src="3127dbf0e6f859bf3c516680fcea4b6cfe2f670dac0bda83e0241154b1b2f77d.png" title="Laura enters 'lmperezs@choucairtesting.com' into Ingrese su email" width="1366"/>
+                <img src="cd4513b2f1d54cf53eed0ec0ba3ce7905d14c9f7a5added4feb78b3776c8aeca.png" title="Laura enters '123456' into Ingrese su password" width="1366"/>
+                <img src="30dbfa5b4e7d0056231891301435576ed5fca298857fe7d228064ef0561f6774.png" title="Laura enters '123456' into Confirme su password" width="1366"/>
+                <img src="657f680410263e8f8dd1e13ee8a4274f1a2bd8da8fbd89a29f8f648e9a70d366.png" title="Laura enters '23/06/2021' into Ingrese la fecha" width="1366"/>
+                <img src="cfdee14fb75f4f1a5d3144623e3fa5a3f9fec1ecf3d412cb27c301852039a82b.png" title="Laura enters 'https://operacion.choucairtesting.com/academy/course/view.php?id=484' into Ingrese la URL" width="1366"/>
+                <img src="82efad283a72dffa8c9b5f024252eeab278cf6edc5db6168a6d5719e4c45bdb6.png" title="Laura enters '1234' into Digite su ONLY" width="1366"/>
+                <img src="0f948b8d716df2b3ba41988c415da79f11550aaa9cde79dce5eda421923d41ac.png" title="Laura enters '8' into Ingrese su rango" width="1366"/>
+                <img src="6e583128e6f5b1438df735dba5032ca7d178a4e4a3f6e089986409234e85f3de.png" title="Laura clicks on Acepte la politica" width="1366"/>
+                <img src="dc3dc447b3a9d5ccb600ab78d956628181e294534fb24ce38b704e7f57a54bdc.png" title="Laura clicks on Seleccione el boton validar" width="1366"/>
+                <img src="86218a3ec4d9f0e3b6d3a03e33060dfaa76bc3f55043aea8f7ed95bb224934d5.png" title="Laura clicks on Seleccione INLINE VALIDATION" width="1366"/>
+                <img src="259b55c214aacb87bf05217c4ae9ad02dd7c13e69af32283dd92a7086cfd7080.png" title="Laura enters 'LAURA M' into Ingrese su requerido" width="1366"/>
+                <img src="7e1dbff8dca2e01219ec59f1cc4e1a0d55fa46f9eac262d20b0f469acd4ea433.png" title="Laura enters 'lmperezs@ufso.edu.co' into Ingrese su correo" width="1366"/>
+                <img src="f5f252e530e3beeb97019cc2af8274033a7fe88f1ac8b306e0e384c90c0ff6c4.png" title="Laura enters '12345' into Ingrese su contrase&ntilde;a" width="1366"/>
+                <img src="9147b27c6c6bab22cd4d1a9fb96a14deb4119885a2a9ff5cbe328de0e80a9d04.png" title="Laura enters '12356' into Confirme su contrase&ntilde;a" width="1366"/>
+                <img src="921ab722d5429e8d6a745171e4385009d6e4ef3013a3b1c92ad516ae8e93f53a.png" title="Laura enters '24/07/2021' into Ingrese la fecha" width="1366"/>
+                <img src="83c2ddecd043c635757c4ee9aa21702706b81a2505399e9bba998c7372c0d637.png" title="Laura enters 'https://github.com/lmperezs/Reto1' into Ingrese su direccion URL" width="1366"/>
+                <img src="98118b7d2015dfb14b62efe3f48b9c993a1b558c91f54d376d646183c4dec172.png" title="Laura clicks on Aceptar politica de privacidad" width="1366"/>
+                <img src="57c5e13a22c089412438237502b44f23fc0fc14671009eb12b3a9486572b3e0b.png" title="Laura enters 'oro' into Ingrese minimo 3 caracteres " width="1366"/>
+                <img src="b3802db68f24ea5aeff091e284e8752f81e87cc9f1b3db6ec03bac06b76fae4f.png" title="Laura enters 'amor' into Ingrese maximo 6 caracteres" width="1366"/>
+                <img src="1ed3d64adfa6c0678d3703e15e9a53865f005ef082d40f40e368fcb63aeacbb6.png" title="Laura enters '22' into Ingrese minimo 3" width="1366"/>
+                <img src="71438782f3eddcc9f58c0eaf79648f50d85f4b2a64147be4092f90cbf2b615e7.png" title="Laura enters '5' into Ingrese maximo 6" width="1366"/>
+                <img src="df678d7ec2c8ef4bdcfad444e1f5493f00754cb82a47c162586a655ec7c49eec.png" title="Laura clicks on Seleccione el boton validar " width="1366"/>
+                <img src="d9a128ee715ebf7490ffad3ec58d53c85b26ee96dae167f115574e14dfa18b0d.png" title="Cuando Laura ingrese la funcionalidad Block Validation" width="1366"/>
+                <img src="1bb620d477fe138a16f0607e44aa9abb0577ebf2a7d8b35a23f6324d9a5965bf.png" title="Entonces Laura valida el correcto funcionamiento del formulario: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.9</span>
+</div>
+</body>
+</html>

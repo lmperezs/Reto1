@@ -1,5 +1,6 @@
 package co.com.choucair.formacion.reto01.stepdefinitions;
 
+import co.com.choucair.formacion.reto01.tasks.Inline;
 import co.com.choucair.formacion.reto01.tasks.Login;
 import co.com.choucair.formacion.reto01.tasks.MenuForms;
 import co.com.choucair.formacion.reto01.tasks.OpenUp;
@@ -19,7 +20,8 @@ public class Reto01StepDefinitions {
 
     @Dado("que Laura quiere ingresar a la pagina colorlib")
     public void queLauraquiereingresaralapaginacolorlib(){
-        OnStage.theActorCalled("Laura").wasAbleTo(OpenUp.thePage(),(Login.OnThePage()),(MenuForms.OnThePage()));
+        OnStage.theActorCalled("Laura").wasAbleTo
+                (OpenUp.thePage(),(Login.OnThePage()),(MenuForms.OnThePage()),(Inline.OnThePage()));
 
     }
 
