@@ -1,10 +1,23 @@
-#language: es
-@tag
-Característica: colorlib
-  como usuario, yo quiero verificar el diligenciamiento del formulario Block Validation
+@stories
 
-  @Esquema1
-  Escenario:verificar el diligenciamiento de la pantalla
-    Dado que Laura quiere ingresar a la pagina colorlib
-    Cuando  Laura ingrese la funcionalidad Block Validation
-    Entonces Laura valida el correcto funcionamiento del formulario
+  Feature: Reto101
+  como usuario, quiero verficar el funcionamiento de la pagina colorlib
+
+  Background:
+  Given que Laura quiere ingresar a la pagina colorlib
+  When busque el formulario en el menú y seleccione la opcion Validación de formulario
+
+  @scenario1
+  Scenario:  verificar el funcionamiento de la opcion Block Validation
+  Then validacion del formulacion Block Validation
+
+  @scenario2
+  Scenario: verificar el funcionamiento de la opcion Inline Validation
+  Then validacion del formulario Inline Validation
+
+    @scenario3
+    Scenario: Valores incorrectos en el formulario Block Validation
+      Then Los valores del formulario Block Validation son incorrectos
+
+
+

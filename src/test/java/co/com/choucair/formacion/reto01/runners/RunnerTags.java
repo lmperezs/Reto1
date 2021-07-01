@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (
         features = "src/test/resources/features/colorlib.feature",
-        tags = "@Esquema1",
+        tags = "@stories",
         glue = "co.com.choucair.formacion.reto01.stepdefinitions",
         snippets = SnippetType.CAMELCASE )
 
